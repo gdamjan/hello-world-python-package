@@ -1,0 +1,15 @@
+[project]
+name = "cool_lib"
+version = "1.0"
+description = "simplest example in the python world"
+url = "https://github.com/gdamjan/hello-world-python-package"
+license = "MIT"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages]
+find = {}
+
+[project.scripts]
+cool-cmd = "cool_lib.__main__:main"
