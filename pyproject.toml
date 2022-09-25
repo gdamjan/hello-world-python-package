@@ -6,6 +6,7 @@ url = "https://github.com/gdamjan/hello-world-python-package"
 license = "MIT"
 
 [tool.setuptools]
+# data to be included is specified in MANIFEST.in
 include-package-data = true
 
 [tool.setuptools.packages]
