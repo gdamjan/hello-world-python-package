@@ -18,3 +18,23 @@ find = {}
 
 [project.scripts]
 cool-cmd = "cool_lib.__main__:main"
+
+[project.optional-dependencies]
+tests = [
+  "coverage",
+  "pytest",
+]
+ci = [
+  "black",
+  "flake8",
+]
+
+[tool.pytest.ini_options]
+testpaths = [
+  "tests",
+]
+
+[tool.black]
+line-length = 120
+target-version = ['py37']
+include = '\.pyi?$'
